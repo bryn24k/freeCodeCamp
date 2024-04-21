@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Developer Survey</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Developer Survey</h1>
+        <p id="description">Tell us what kind of developer you are</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label" for="name">Name: <input placeholder="Enter your name" id="name" name="name" type="text" required /></label>
+                <label id="email-label" for="email">Email: <input placeholder="Enter your email" id="email" name="email" type="email" required /></label>
+                <label id="number-label" for="number">Age (optional): <input placeholder="Age" id="number" name="age" type="number" min="13" max="120" /></label>
+            </fieldset>
+            <fieldset>
+                <label for="dropdown">What kind of developer are you?</label>
+                <select id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="Web Developer">Web Developer</option>
+                    <option value="Mobile App Developer">Mobile App Developer</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Data Scientist">Data Scientist</option>
+                    <option value="Game Developer">Game Developer</option>
+                    <option value="DevOps Engineer">DevOps Engineer</option>
+                    <option value="Other">Other</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label>Which operating system do you primarily use for development?</label>
+                <label for="Windows"><input id="Windows" value="Windows" class="inline" type="radio" name="operating-system" checked>Windows</label>
+                <label for="macOS"><input id="macOS" value="macOS" class="inline" type="radio" name="operating-system">macOS</label>
+                <label for="Linux"><input id="Linux" value="Linux" class="inline" type="radio" name="operating-system">Linux</label>
+            </fieldset>
+            <fieldset>
+                <label>Which programming languages do you primarily work with? (Check all that apply)</label>
+                <label for="JavaScript"><input id="JavaScript" class="inline" value="JavaScript" type="checkbox" name="programming-language">JavaScript</label>
+                <label for="Python"><input id="Python" class="inline" value="Python" type="checkbox" name="programming-language">Python</label>
+                <label for="Java"><input id="Java" class="inline" value="Java" type="checkbox" name="programming-language">Java</label>
+                <label for="C/C++"><input id="C/C++" class="inline" value="C/C++" type="checkbox" name="programming-language">C/C++</label>
+                <label for="Ruby"><input id="Ruby" class="inline" value="Ruby" type="checkbox" name="programming-language">Ruby</label>    
+                <label for="PHP"><input id="PHP" class="inline" value="PHP" type="checkbox" name="programming-language">PHP</label>  
+                <label for="Swift"><input id="Swift" class="inline" value="Swift" type="checkbox" name="programming-language">Swift</label> 
+                <label for="Other"><input id="Other" class="inline" value="Other" type="checkbox" name="programming-language">Other</label>
+            </fieldset> 
+            <fieldset>
+                <label for="additional-comments">Additional comments</label>
+                    <textarea id="additional-comments" rows="3" cols="30" placeholder="Include any additional comments."></textarea>
+            </fieldset>
+            <input class="submit" id="submit" type="submit" value="Submit" />
+        </form>
+    </body>
